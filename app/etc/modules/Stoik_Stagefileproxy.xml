@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Stoik_Stagefileproxy>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Stoik_Stagefileproxy>
+    </modules>
+</config>

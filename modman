@@ -1,0 +1,8 @@
+app/etc/modules/Stoik_Stagefileproxy.xml  app/etc/modules/Stoik_Stagefileproxy.xml
+app/code/local/Stoik/Stagefileproxy/etc/config.xml app/code/local/Stoik/Stagefileproxy/etc/config.xml
+app/code/local/Stoik/Stagefileproxy/etc/system.xml app/code/local/Stoik/Stagefileproxy/etc/system.xml
+app/code/local/Stoik/Stagefileproxy/etc/adminhtml.xml app/code/local/Stoik/Stagefileproxy/etc/adminhtml.xml
+app/code/local/Stoik/Stagefileproxy/Helper/Data.php app/code/local/Stoik/Stagefileproxy/Helper/Data.php
+app/code/local/Stoik/Stagefileproxy/Model/Product/Image.php app/code/local/Stoik/Stagefileproxy/Model/Product/Image.php
+app/code/local/Stoik/Stagefileproxy/Model/System/Config/Source/Dropdown/Values.php app/code/local/Stoik/Stagefileproxy/Model/System/Config/Source/Dropdown/Values.php
+app/code/local/Stoik/Stagefileproxy/Model/Observer.php app/code/local/Stoik/Stagefileproxy/Model/Observer.php
