@@ -8,10 +8,6 @@ class Stoik_Remotemediadownloader_Model_System_Config_Source_Dropdown_Values
             array(
                 'value' => 'php_curl',
                 'label' => 'PHP CURL',
-            ),
-            array(
-                'value' => 'php_curl_c',
-                'label' => 'PHP CURL C',
             )
         );
     }

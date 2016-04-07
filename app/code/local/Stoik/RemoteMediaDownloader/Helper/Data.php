@@ -3,11 +3,13 @@
  * @category   Stoik
  * @package    Stoik_Remotemediadownloader
  * @author     jstoikidis@gmail.com
+ * @website    http://www.creode.co.uk
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 class Stoik_Remotemediadownloader_Helper_Data extends Mage_Core_Helper_Abstract
 {
     public function getConfig($field, $default = null){
-        $value = Mage::getStoreConfig('Remotemediadownloader/option/'.$field);
+        $value = Mage::getStoreConfig('remotemediadownloader/option/'.$field);
         if(!isset($value) or trim($value) == ''){
             return $default;
         }else{
@@ -19,7 +21,7 @@ class Stoik_Remotemediadownloader_Helper_Data extends Mage_Core_Helper_Abstract
         if(is_array($data) || is_object($data)){
             $data = print_r($data, true);
         }
-        Mage::log($data, null, 'Remotemediadownloader.log');
+        Mage::log($data, null, 'remotemediadownloader.log');
 	}
 
 	public function isActive(){
@@ -27,39 +29,39 @@ class Stoik_Remotemediadownloader_Helper_Data extends Mage_Core_Helper_Abstract
 	}
 
     /**
-     * [validateFileFolder description]
-     * @return [type] [description]
+     * Checks if a file exists in the local system
+     * and generates the folder if it is needed
+     * @return boolean
      */
     public function validateFileFolder($localFile, $localFolder){
         return !file_exists($localFile) && $this->generateLocalFolder($localFolder);
     }
 
     /**
-     * [generateLocalFolder description]
+     * Creates local folder
+     * that the remote image is going to be downloaded
      * @return [type] [description]
      */
     public function generateLocalFolder($localFolder){
-       Mage::log($localFolder);
         if(!file_exists($localFolder)){
             if(mkdir($localFolder, 0777, true)){
                 return true;
             }
         }
-        return true;
+        return false;
     }
 
     /**
-     * [remoteImageDownload description]
+     * Downloads remote image
      * @param  [type] $type      [description]
      * @param  [type] $imagePath [description]
      * @return [type]            [description]
      */
     public function remoteImageDownload($type, $imagePath, $localFolder){
-    
+        
         $localFolder = $localFolder . "/";
         $imageUrl = $this->getConfig('origin') . $imagePath;
-        Mage::log($localFolder);
-        Mage::log($imageUrl);
+        
         if (!filter_var($imageUrl, FILTER_VALIDATE_URL) === false) {
 
             $filename = basename($imageUrl);
