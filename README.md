@@ -1,6 +1,6 @@
-Magento | State File Proxy
+Magento | Remote Media Downloader
 ============================
-Stage File Proxy for Magento downloads public files as they are needed. This saves space and time and optimises local development as it ull all required images.
+Remote Media Downloader for Magento downloads public files as they are needed. This saves space and time and optimises local development as it ull all required images.
 
 **You should not need to enable this module in production.**
 
@@ -8,9 +8,9 @@ Description
 -----------
 When developing Drupal sites locally, you often face a choice between broken images and taking the time to copy a snapshot of the remote files directory, which might be several gigabytes large, depending on the site. 
 
-Stage File Proxy lets you update the database of your local development instance without having to update your files directory. Stage File Proxy transfers each requested file just in time when it is requested. This is especially useful for large sites with huge numbers of files. 
+Remote Media Downloader lets you update the database of your local development instance without having to update your files directory. Remote Media Downloader transfers each requested file just in time when it is requested. This is especially useful for large sites with huge numbers of files. 
 
-If you only visit 2 pages and only need 10 remote files to serve those pages, Stage File Proxy will only transfer those 10 files.
+If you only visit 2 pages and only need 10 remote files to serve those pages, Remote Media Downloader will only transfer those 10 files.
 
 How to use
 -------------
