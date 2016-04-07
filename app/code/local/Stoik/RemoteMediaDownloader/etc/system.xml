@@ -8,7 +8,7 @@
     </tabs>
     <sections>
         <Remotemediadownloader module="Remotemediadownloader">
-            <label>Stage File Proxy</label>
+            <label>Remote Media Downloadery</label>
             <tab>stoikall</tab>
             <frontend_type>text</frontend_type>
             <sort_order>1200</sort_order>

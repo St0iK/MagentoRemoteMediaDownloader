@@ -47,7 +47,7 @@
 											<title>Stoik - All</title>
 										</stoikinfo>
                                         <Remotemediadownloader>
-                                            <title>Stage File Proxy</title>
+                                            <title>Remote Media Downloader</title>
                                         </Remotemediadownloader>
                                     </children>
                                 </config>

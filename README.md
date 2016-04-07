@@ -21,7 +21,7 @@ Then go to System -> Config Media File Storate and set the Remote url
 ------------
 
 ```php
-Magento Stage file Proxt might be slow on the first request of a page. As it will go throught and download any missing images on your locall server.
+Magento Remote Media Downloader might be slow on the first request of a page. As it will go throught and download any missing images on your locall server.
 
 **DO NOT USE ON PRODUCTION**
 ```
