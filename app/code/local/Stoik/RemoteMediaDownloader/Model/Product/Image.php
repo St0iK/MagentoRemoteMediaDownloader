@@ -1,7 +1,7 @@
 <?php
 /**
  * @category Utilities
- * @package Stoik_Stagefileproxy
+ * @package Stoik_Remotemediadownloader
  * @author jstoikidis@gmail.com
  * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
@@ -14,7 +14,7 @@
  * 
  * @see http://php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen
  */
-class Stoik_Stagefileproxy_Model_Product_Image extends Mage_Catalog_Model_Product_Image
+class Stoik_Remotemediadownloader_Model_Product_Image extends Mage_Catalog_Model_Product_Image
 {
 
    /**
@@ -24,7 +24,7 @@ class Stoik_Stagefileproxy_Model_Product_Image extends Mage_Catalog_Model_Produc
     */
     protected function _fileExists($filename)
     {
-    	$helper				= Mage::helper('stagefileproxy');
+    	$helper				= Mage::helper('Remotemediadownloader');
     	$remoteOrigin 	    = $helper->getConfig('origin');
     	$type               = $helper->getConfig('type');
     	$localFile = $filename;

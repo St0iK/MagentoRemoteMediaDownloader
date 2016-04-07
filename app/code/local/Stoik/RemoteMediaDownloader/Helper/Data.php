@@ -1,13 +1,13 @@
 <?php
 /**
  * @category   Stoik
- * @package    Stoik_Stagefileproxy
+ * @package    Stoik_Remotemediadownloader
  * @author     jstoikidis@gmail.com
  */
-class Stoik_Stagefileproxy_Helper_Data extends Mage_Core_Helper_Abstract
+class Stoik_Remotemediadownloader_Helper_Data extends Mage_Core_Helper_Abstract
 {
     public function getConfig($field, $default = null){
-        $value = Mage::getStoreConfig('stagefileproxy/option/'.$field);
+        $value = Mage::getStoreConfig('Remotemediadownloader/option/'.$field);
         if(!isset($value) or trim($value) == ''){
             return $default;
         }else{
@@ -19,7 +19,7 @@ class Stoik_Stagefileproxy_Helper_Data extends Mage_Core_Helper_Abstract
         if(is_array($data) || is_object($data)){
             $data = print_r($data, true);
         }
-        Mage::log($data, null, 'stagefileproxy.log');
+        Mage::log($data, null, 'Remotemediadownloader.log');
 	}
 
 	public function isActive(){

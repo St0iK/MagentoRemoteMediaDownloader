@@ -1,6 +1,6 @@
 <?php
 
-class Stoik_Stagefileproxy_Model_System_Config_Source_Dropdown_Values
+class Stoik_Remotemediadownloader_Model_System_Config_Source_Dropdown_Values
 {
     public function toOptionArray()
     {

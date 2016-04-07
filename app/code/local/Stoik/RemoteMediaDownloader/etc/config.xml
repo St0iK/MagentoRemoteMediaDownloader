@@ -1,35 +1,35 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Stoik_Stagefileproxy>
+        <Stoik_Remotemediadownloader>
             <version>0.2.0</version>
-        </Stoik_Stagefileproxy>
+        </Stoik_Remotemediadownloader>
     </modules>
     <global>
         <models>
             <catalog>
                 <rewrite>
-                    <product_image>Stoik_Stagefileproxy_Model_Product_Image</product_image>
+                    <product_image>Stoik_Remotemediadownloader_Model_Product_Image</product_image>
                 </rewrite>
             </catalog>
         </models>
         <blocks>
-            <stagefileproxy>
-                <class>Stoik_Stagefileproxy_Block</class>
-            </stagefileproxy>
+            <Remotemediadownloader>
+                <class>Stoik_Remotemediadownloader_Block</class>
+            </Remotemediadownloader>
         </blocks>
         <helpers>
-            <stagefileproxy>
-                <class>Stoik_Stagefileproxy_Helper</class>
-            </stagefileproxy>
+            <Remotemediadownloader>
+                <class>Stoik_Remotemediadownloader_Helper</class>
+            </Remotemediadownloader>
         </helpers>
 		<events>
 			<core_block_abstract_to_html_after>
 				<observers>
-					<stoik_stagefileproxy_core_block_abstract_to_html_after>
-						<class>Stoik_Stagefileproxy_Model_Observer</class>
-						<method>stageFileProxy</method>
-					</stoik_stagefileproxy_core_block_abstract_to_html_after>
+					<stoik_Remotemediadownloader_core_block_abstract_to_html_after>
+						<class>Stoik_Remotemediadownloader_Model_Observer</class>
+						<method>Remotemediadownloader</method>
+					</stoik_Remotemediadownloader_core_block_abstract_to_html_after>
 				</observers>
 			</core_block_abstract_to_html_after>
 		</events>
@@ -46,9 +46,9 @@
                                         <stoikinfo>
 											<title>Stoik - All</title>
 										</stoikinfo>
-                                        <stagefileproxy>
+                                        <Remotemediadownloader>
                                             <title>Stage File Proxy</title>
-                                        </stagefileproxy>
+                                        </Remotemediadownloader>
                                     </children>
                                 </config>
                             </children>
@@ -59,12 +59,12 @@
         </acl>
     </adminhtml>
     <default>
-        <stagefileproxy>
+        <Remotemediadownloader>
             <option>
                 <active>1</active>
                 <code>magento</code>
             </option>
             <dropdown>php_curl</dropdown>
-        </stagefileproxy>
+        </Remotemediadownloader>
     </default>
 </config>

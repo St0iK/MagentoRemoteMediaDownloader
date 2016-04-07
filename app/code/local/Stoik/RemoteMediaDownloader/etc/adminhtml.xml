@@ -9,10 +9,10 @@
 							<config>
 								<children>
 									<stoikchoinfo>
-										<title>Stagefileproxy - All</title>
+										<title>Remotemediadownloader - All</title>
 									</stoikchoinfo>
 									<easypathhints>
-										<title>Easy Path Hints Area</title>
+										<title>Remote Media downloader Area</title>
 									</easypathhints>
 								</children>
 							</config>

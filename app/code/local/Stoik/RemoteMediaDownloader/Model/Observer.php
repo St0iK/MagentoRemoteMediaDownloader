@@ -1,21 +1,21 @@
 <?php
 /**
  * @category   Stoik
- * @package    Stoik_Stagefileproxy
+ * @package    Stoik_Remotemediadownloader
  * @author     jstoikidis@gmail.com
  * @website    http://www.creode.co.uk
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-class Stoik_Stagefileproxy_Model_Observer {
+class Stoik_Remotemediadownloader_Model_Observer {
 
 	private $helper = NULL;
 	/**
 	 * [stage description]
 	 * @param Varien_Event_Observer $observer [description]
 	 */
-	public function stageFileProxy(Varien_Event_Observer $observer) {
+	public function Remotemediadownloader(Varien_Event_Observer $observer) {
 		$transport			= $observer->getTransport();
-		$this->helper		= Mage::helper('stagefileproxy');
+		$this->helper		= Mage::helper('Remotemediadownloader');
 		$remoteOrigin 	    = $this->helper->getConfig('origin');
 		$type               = $this->helper->getConfig('type');
 		$type  = "php_curl";

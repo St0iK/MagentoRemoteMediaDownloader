@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Stoik_Stagefileproxy>
+        <Stoik_Remotemediadownloader>
             <active>true</active>
             <codePool>local</codePool>
-        </Stoik_Stagefileproxy>
+        </Stoik_Remotemediadownloader>
     </modules>
 </config>
