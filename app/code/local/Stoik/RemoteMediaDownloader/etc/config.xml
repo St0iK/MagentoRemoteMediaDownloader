@@ -14,14 +14,14 @@
             </catalog>
         </models>
         <blocks>
-            <Remotemediadownloader>
+            <remotemediadownloader>
                 <class>Stoik_Remotemediadownloader_Block</class>
-            </Remotemediadownloader>
+            </remotemediadownloader>
         </blocks>
         <helpers>
-            <Remotemediadownloader>
+            <remotemediadownloader>
                 <class>Stoik_Remotemediadownloader_Helper</class>
-            </Remotemediadownloader>
+            </remotemediadownloader>
         </helpers>
 		<events>
 			<core_block_abstract_to_html_after>
@@ -46,9 +46,9 @@
                                         <stoikinfo>
 											<title>Stoik - All</title>
 										</stoikinfo>
-                                        <Remotemediadownloader>
+                                        <remotemediadownloader>
                                             <title>Remote Media Downloader</title>
-                                        </Remotemediadownloader>
+                                        </remotemediadownloader>
                                     </children>
                                 </config>
                             </children>
@@ -59,12 +59,12 @@
         </acl>
     </adminhtml>
     <default>
-        <Remotemediadownloader>
+        <remotemediadownloader>
             <option>
                 <active>1</active>
                 <code>magento</code>
             </option>
             <dropdown>php_curl</dropdown>
-        </Remotemediadownloader>
+        </remotemediadownloader>
     </default>
 </config>

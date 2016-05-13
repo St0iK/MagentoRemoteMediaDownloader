@@ -14,12 +14,13 @@ class Stoik_Remotemediadownloader_Model_Observer {
 	 * @param Varien_Event_Observer $observer [description]
 	 */
 	public function Remotemediadownloader(Varien_Event_Observer $observer) {
+
 		$transport			= $observer->getTransport();
-		$this->helper		= Mage::helper('Remotemediadownloader');
+		$this->helper		= Mage::helper('remotemediadownloader');
 		$remoteOrigin 	    = $this->helper->getConfig('origin');
 		$type               = $this->helper->getConfig('type');
 		$type  = "php_curl";
-		//$type = 'asd';		
+
 		$html = $transport->getHtml();
 		// Check if module is active
 		if($this->helper->isActive()){

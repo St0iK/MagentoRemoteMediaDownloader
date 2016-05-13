@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <stoikall translate="label" module="Remotemediadownloader">
+        <stoikall translate="label" module="remotemediadownloader">
             <label>Storage Media settings</label>
             <sort_order>400</sort_order>
         </stoikall>
     </tabs>
     <sections>
-        <Remotemediadownloader module="Remotemediadownloader">
+        <remotemediadownloader module="remotemediadownloader">
             <label>Remote Media Downloader</label>
             <tab>stoikall</tab>
             <frontend_type>text</frontend_type>
@@ -56,6 +56,6 @@
                     </fields>
                 </option>
             </groups>
-        </Remotemediadownloader>
+        </remotemediadownloader>
     </sections>
 </config>

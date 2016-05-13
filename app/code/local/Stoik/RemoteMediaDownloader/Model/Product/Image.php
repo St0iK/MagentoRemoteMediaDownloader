@@ -17,6 +17,7 @@
 class Stoik_Remotemediadownloader_Model_Product_Image extends Mage_Catalog_Model_Product_Image
 {
 
+
    /**
     * [_fileExists description]
     * @param  [type] $filename [description]
@@ -24,13 +25,13 @@ class Stoik_Remotemediadownloader_Model_Product_Image extends Mage_Catalog_Model
     */
     protected function _fileExists($filename)
     {
-    	$helper				= Mage::helper('Remotemediadownloader');
+    	$helper				= Mage::helper('remotemediadownloader');
     	$remoteOrigin 	    = $helper->getConfig('origin');
     	$type               = $helper->getConfig('type');
     	$localFile = $filename;
     	$localFolder = dirname($localFile);
         if (!parent::_fileExists($filename)) {
-        	if($helper->validateFileFolder($localFile, $localFolder . "/")){
+        	if($helper->validateFileFolder($localFile,$localFolder)){
         		
         		$helper->remoteImageDownload($type, str_replace(Mage::getBaseDir(), "", $filename), $localFolder);
         		return true;
